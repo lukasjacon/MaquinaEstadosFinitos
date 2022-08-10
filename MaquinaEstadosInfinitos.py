@@ -49,7 +49,7 @@ def validaSimbolo(Simbolos):
     return resultado
 
 
-arquivos = os.listdir('texto')
+arquivos = os.listdir('texto') #pasta na qual os arquivos são lidos
 for arquivo in arquivos: # Loop que passa por cada arquivo, seguido por um comando que retornará a extensão do arquivo, para validação.
     extensao = os.path.splitext(arquivo)[1]
     if extensao == ".txt":
